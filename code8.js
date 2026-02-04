@@ -34,7 +34,7 @@ gdjs.Instrucao_9502Code.GDAcerto5Objects1= [];
 gdjs.Instrucao_9502Code.GDAcerto5Objects2= [];
 
 
-gdjs.Instrucao_9502Code.asyncCallback14786436 = function (runtimeScene, asyncObjectsList) {
+gdjs.Instrucao_9502Code.asyncCallback13321540 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Instrucao_9502Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Cena_07", false);
 }gdjs.Instrucao_9502Code.localVariables.length = 0;
@@ -48,7 +48,7 @@ gdjs.Instrucao_9502Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Instrucao_9502Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Instrucao_9502Code.asyncCallback14786436(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Instrucao_9502Code.asyncCallback13321540(runtimeScene, asyncObjectsList)));
 }
 }
 
