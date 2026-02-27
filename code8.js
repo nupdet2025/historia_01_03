@@ -34,7 +34,7 @@ gdjs.Instrucao_9502Code.GDAcerto5Objects1= [];
 gdjs.Instrucao_9502Code.GDAcerto5Objects2= [];
 
 
-gdjs.Instrucao_9502Code.asyncCallback13321540 = function (runtimeScene, asyncObjectsList) {
+gdjs.Instrucao_9502Code.asyncCallback30885548 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Instrucao_9502Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Cena_07", false);
 }gdjs.Instrucao_9502Code.localVariables.length = 0;
@@ -48,7 +48,7 @@ gdjs.Instrucao_9502Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Instrucao_9502Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Instrucao_9502Code.asyncCallback13321540(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Instrucao_9502Code.asyncCallback30885548(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -107,7 +107,8 @@ gdjs.copyArray(runtimeScene.getObjects("btn_certo"), gdjs.Instrucao_9502Code.GDb
 gdjs.copyArray(runtimeScene.getObjects("btn_errado_01"), gdjs.Instrucao_9502Code.GDbtn_9595errado_959501Objects1);
 gdjs.copyArray(runtimeScene.getObjects("btn_errado_02"), gdjs.Instrucao_9502Code.GDbtn_9595errado_959502Objects1);
 gdjs.copyArray(runtimeScene.getObjects("btn_next"), gdjs.Instrucao_9502Code.GDbtn_9595nextObjects1);
-{for(var i = 0, len = gdjs.Instrucao_9502Code.GDAcertoObjects1.length ;i < len;++i) {
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\audio_03.mp3", 4, false, 100, 1);
+}{for(var i = 0, len = gdjs.Instrucao_9502Code.GDAcertoObjects1.length ;i < len;++i) {
     gdjs.Instrucao_9502Code.GDAcertoObjects1[i].hide();
 }
 }{for(var i = 0, len = gdjs.Instrucao_9502Code.GDAcertoObjects1.length ;i < len;++i) {
@@ -196,7 +197,8 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.Instrucao_9502Code.GDbtn_9595beforeObjects1 */
 /* Reuse gdjs.Instrucao_9502Code.GDbtn_9595comecarObjects1 */
 /* Reuse gdjs.Instrucao_9502Code.GDpainel_959501Objects1 */
-{for(var i = 0, len = gdjs.Instrucao_9502Code.GDpainel_959501Objects1.length ;i < len;++i) {
+{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 4, 0, 1);
+}{for(var i = 0, len = gdjs.Instrucao_9502Code.GDpainel_959501Objects1.length ;i < len;++i) {
     gdjs.Instrucao_9502Code.GDpainel_959501Objects1[i].hide();
 }
 for(var i = 0, len = gdjs.Instrucao_9502Code.GDText_9595InstrucaoObjects1.length ;i < len;++i) {
@@ -211,6 +213,7 @@ for(var i = 0, len = gdjs.Instrucao_9502Code.GDbtn_9595beforeObjects1.length ;i 
 }{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Cena", "Effect", false);
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\btn_press.mp3", false, 100, 1);
 }{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 1, 0, 1);
+}{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 4, 0, 1);
 }
 { //Subevents
 gdjs.Instrucao_9502Code.eventsList0(runtimeScene);} //End of subevents
